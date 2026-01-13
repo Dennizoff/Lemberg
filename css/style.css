@@ -1,0 +1,136 @@
+html {
+    scroll-behavior: smooth;
+    background-color: #faf9f6;
+}
+
+body {
+    max-width: 800px;        
+    margin-left: auto;      
+    margin-right: auto;
+    font-family: 'Montserrat', sans-serif;
+    color: #333; 
+    background-color: #faf9f6;
+}
+
+main {    
+    width: 90%;
+    margin: 0 auto; /* 🔥 Центрируем сам контейнер main внутри body */
+}
+
+/* --- КАРТИНКИ --- */
+img {
+    border-radius: 20px;
+    max-width: 100%;
+    height: auto;
+    /* 🔥 ДЕЛАЕМ КАРТИНКИ РОВНЫМИ */
+    display: block;       /* Картинка становится блоком */
+    margin: 0 auto 20px;  /* Авто-отступы по бокам ставят её в центр */
+}
+
+/* --- ЗАГОЛОВКИ --- */
+h1, h2, h3 {
+    font-family: 'Merriweather', serif;
+    text-align: center;     
+    color: #2c2c2c;
+}
+
+h2 {
+    margin-top: 60px; /* Чуть больше воздуха перед новой секцией */
+    margin-bottom: 20px;
+}
+
+h3 {
+    margin-top: 30px; /* Уменьшил глобальный отступ */
+}
+
+/* --- ОПИСАНИЯ СЕКЦИЙ (Текст под заголовками) --- */
+/* 🔥 Выравниваем текст "Для любителей мяса..." по центру */
+section > p {
+    text-align: center;
+    margin-bottom: 40px; /* Отступ до первой карточки */
+}
+
+/* --- МЕНЮ --- */
+.navigation ul {
+    padding: 0;            
+    margin: 0 0 0px; /* 🔥 Убрал гигантский отступ 170px, поставил аккуратный 60 */
+    display: flex;          
+    flex-direction: column; 
+    gap: 15px;              
+    width: 100%;            
+}
+
+.navigation li {
+    list-style: none;       
+    background-color: black;
+    border-radius: 30px;    
+    box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+}
+
+.navigation a {
+    text-decoration: none;  
+    color: white;           
+    font-size: 18px;        
+    text-align: center;     
+    display: block;         
+    padding: 20px;        
+}
+
+.navigation li:active {
+    background-color: #333; 
+    transform: scale(0.98); 
+}
+
+/* --- БЕЛЫЕ КАРТОЧКИ --- */
+.restaurant-card {
+    background-color: white;
+    padding: 30px 25px; /* Чуть больше воздуха внутри */
+    border-radius: 20px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+    margin-bottom: 40px;
+    text-align: center; /* Центрирует весь текст внутри карточки */
+}
+
+/* 🔥 Убираем дырку над заголовком ВНУТРИ карточки */
+.restaurant-card h3 {
+    margin-top: 0; 
+    margin-bottom: 15px;
+}
+
+/* Кнопки внутри текста */
+.btn-link {
+    display: inline-block;
+    background-color: #604d9e;
+    color: white;
+    text-decoration: none;
+    padding: 12px 30px;
+    border-radius: 50px;
+    font-weight: bold;
+    margin-top: 15px;
+    box-shadow: 0 4px 10px rgba(96, 77, 158, 0.3);
+}
+
+.btn-up {
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    background-color: black;
+    color: white;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    text-decoration: none;
+    opacity: 0.8;
+}
+
+p{
+    text-align: justify;
+}
+
+p1{
+    text-align: center;
+}
